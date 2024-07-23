@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário de Tags HTML</title>
+    <style>
+        /* Estilos básicos para a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .tag {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        .tag h2 {
+            font-size: 1.5em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        
+        .tag p {
+            margin: 5px 0;
+        }
+        
+        .tag code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dicionário de Tags HTML</h1>
+    
+    <!-- Seção para a tag de cabeçalhos -->
+    <div class="tag">
+        <h2>&lt;h1&gt; a &lt;h6&gt;</h2>
+        <p>As tags de cabeçalho &lt;h1&gt; a &lt;h6&gt; são usadas para definir títulos e subtítulos. &lt;h1&gt; é o mais importante e &lt;h6&gt; é o menos importante.</p>
+        <code>
+            &lt;h1&gt;Título Principal&lt;/h1&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a tag de parágrafo -->
+    <div class="tag">
+        <h2>&lt;p&gt;</h2>
+        <p>A tag &lt;p&gt; é usada para definir um parágrafo de texto.</p>
+        <code>
+            &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+        </code>
+    </div>
+
+    <!-- Seção para a tag de link -->
+    <div class="tag">
+        <h2>&lt;a&gt;</h2>
+        <p>A tag &lt;a&gt; é usada para criar um link. O atributo <strong>href</strong> especifica o destino do link.</p>
+        <code>
+            &lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo&lt;/a&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a tag de imagem -->
+    <div class="tag">
+        <h2>&lt;img&gt;</h2>
+        <p>A tag &lt;img&gt; é usada para incorporar uma imagem. O atributo <strong>src</strong> especifica o caminho da imagem.</p>
+        <code>
+            &lt;img src="caminho/para/imagem.jpg" alt="Descrição da Imagem"&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a lista não ordenada -->
+    <div class="tag">
+        <h2>&lt;ul&gt; e &lt;li&gt;</h2>
+        <p>A tag &lt;ul&gt; define uma lista não ordenada, e &lt;li&gt; define um item da lista.</p>
+        <code>
+            &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a lista ordenada -->
+    <div class="tag">
+        <h2>&lt;ol&gt; e &lt;li&gt;</h2>
+        <p>A tag &lt;ol&gt; define uma lista ordenada, e &lt;li&gt; define um item da lista.</p>
+        <code>
+            &lt;ol&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Primeiro item&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Segundo item&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Terceiro item&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a tag div -->
+    <div class="tag">
+        <h2>&lt;div&gt;</h2>
+        <p>A tag &lt;div&gt; é usada como um contêiner genérico para agrupar elementos e aplicar estilos CSS.</p>
+        <code>
+            &lt;div&gt;Este é um contêiner&lt;/div&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a tag span -->
+    <div class="tag">
+        <h2>&lt;span&gt;</h2>
+        <p>A tag &lt;span&gt; é usada para estilizar uma parte do texto dentro de outro elemento.</p>
+        <code>
+            &lt;span style="color: red;"&gt;Texto em vermelho&lt;/span&gt;
+        </code>
+    </div>
+    
+    <!-- Seção para a tag de tabela -->
+    <div class="tag">
+        <h2>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt; e &lt;td&gt;</h2>
+        <p>A tag &lt;table&gt; é usada para criar uma tabela. &lt;tr&gt; define uma linha, &lt;th&gt; define uma célula de cabeçalho e &lt;td&gt; define uma célula de dados.</p>
+        <code>
+            &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cabeçalho 1&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cabeçalho 2&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Dado 1&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Dado 2&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+    </div>
+</body>
+</html>
