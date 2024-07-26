@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Categoria</h1>
+        <nav>
+            <a href="index.html">Página Principal</a>
+            <a href="categoria.html">Cadastrar Categoria</a>
+            <a href="unidade.html">Cadastrar Unidade de Medida</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="categoria-form">
+            <h2>Cadastrar Categoria</h2>
+            <form id="form-categoria">
+                <label for="categoria-id">ID:</label>
+                <input type="text" id="categoria-id" required>
+                
+                <label for="categoria-nome">Nome:</label>
+                <input type="text" id="categoria-nome" required>
+                
+                <button type="submit">Cadastrar Categoria</button>
+            </form>
+        </section>
+
+        <section id="consultar-categoria">
+            <h2>Consultar Categoria</h2>
+            <input type="text" id="consultar-categoria-id" placeholder="Digite o ID da categoria">
+            <button onclick="consultarCategoria()">Consultar</button>
+            <div id="resultado-consulta-categoria"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

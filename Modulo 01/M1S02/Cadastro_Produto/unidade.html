@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Unidade de Medida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Unidade de Medida</h1>
+        <nav>
+            <a href="index.html">Página Principal</a>
+            <a href="categoria.html">Cadastrar Categoria</a>
+            <a href="unidade.html">Cadastrar Unidade de Medida</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="unidade-form">
+            <h2>Cadastrar Unidade de Medida</h2>
+            <form id="form-unidade">
+                <label for="unidade-id">ID:</label>
+                <input type="text" id="unidade-id" required>
+                
+                <label for="unidade-nome">Nome:</label>
+                <input type="text" id="unidade-nome" required>
+                
+                <button type="submit">Cadastrar Unidade</button>
+            </form>
+        </section>
+
+        <section id="consultar-unidade">
+            <h2>Consultar Unidade de Medida</h2>
+            <input type="text" id="consultar-unidade-id" placeholder="Digite o ID da unidade">
+            <button onclick="consultarUnidade()">Consultar</button>
+            <div id="resultado-consulta-unidade"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
