@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Farmácia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para a página de contato */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: .5em;
+            color: #333333;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: .75em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: .75em 1.5em;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background .3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farmácia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contato</h2>
+        <form class="contact-form" action="mailto:email@farmacia.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo de Mensagem:</label>
+                <select id="tipo" name="tipo">
+                    <option value="duvida">Dúvida</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmácia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
