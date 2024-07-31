@@ -7,3 +7,82 @@ h3 {
     color: green;
     text-align: justify;
 }
+
+/*classes*/
+
+.paragraph{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/*ids*/
+
+#titulo-exclusivo{
+    background-color: purple;
+    color: yellow;
+    padding: 3px;
+    font-size: 40px;
+
+}
+
+/*Ordem das regras*/
+
+/*TAG*/
+h2{
+    border-bottom: 2px solid red;
+}
+/*Classe*/
+.titulo{
+    border-bottom: 2px solid rgb(9, 35, 119);
+}
+/*Ids*/
+#algum-titulo{
+    border-bottom: 2px solid green;
+}
+
+/*Nome de cores*/
+.color-name{
+    color:rgb(108, 16, 173) ;
+}
+
+/*HEX*/
+.hex {
+    color: #da1438;
+}
+
+/*rgba*/
+.rgba{
+    color: rgba(100, 50, 45, 0.5);
+}
+
+/*Backgroung*/
+
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+.bg-2{
+    background-color: rgb(200,20,40);
+    color: #00eaff;
+}
+/*Background opacity*/
+.bg-apacity{
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bg-apacity-2{
+    background-color: #999;
+    opacity: 0.8;
+
+}
+
+/* BG Image*/
+.bg-image{
+    background-image: url(../Exercícios_Extras/img/8403697.jpg);
+    padding: 10px;
+    color: rgb(193, 243, 112);
+    text-align: center;
+    font-size: 50px;
+}
