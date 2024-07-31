@@ -1,4 +1,3 @@
-/* Reseta margens, preenchimento e define box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +8,10 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #fcf2f2;
+    justify-content: center;
+    align-items: center;
 }
-
+/*****************************************************************/
 /* Estilização para o header */
 .header {
     height: 90px;
@@ -49,6 +50,8 @@ body {
     color: #855e25;
 }
 
+
+/*********************************************************************/
 /* Estilizando o footer */
 .footer {
     background-color: #f5c367;
@@ -57,9 +60,11 @@ body {
     padding: 15px;
 }
 
+/********************************************************************/
 /* Estilizando o article */
 .article-index,
-.article-sobre {
+.article-sobre
+ {
     background-color: #fffdf9;
     color: #855e25;
     padding: 20px;
@@ -81,28 +86,44 @@ body {
     min-height: 600px; /* Altura mínima */
 }
 
+.article-cardapio {
+    min-height: 600px; /* Altura mínima */
+}
+
+.article-contato {
+    min-height: 600px; /* Altura mínima */
+}
+
  p {
     padding: 5px;
     margin-top: 5px;
     font-size: 20px;
     text-align: justify;
     color: #000000;
-}
+    }
 
     h3 {
     padding: 10px;
     font-size: 30px;
     color: #ce690b;
     font-weight: bold;
-}
-    .article-sobre .h3-maps{
-        padding: 10px;
-        font-size: 30px;
-        text-align: center;
-        color: #ce690b;
-        font-weight: bold;
     }
-
+    .article-sobre .h3-maps{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #ce690b;
+    font-weight: bold;
+    }
+ 
+    .map iframe{  
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    height: 400px;
+        
+    
+    }
 
 /* Centralizar as imagens e o conteúdo */
 .section-time {
@@ -151,7 +172,8 @@ body {
     }
 
     .article-index,
-    .article-sobre {
+    .article-sobre
+    {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -187,7 +209,8 @@ body {
     }
 
     .article-index,
-    .article-sobre {
+    .article-sobre
+     {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -197,3 +220,111 @@ body {
         height: 80px;
     }
 }
+/* *************************************************************** */
+/*Estilizar a página de cardápio*/
+.article-cardapio {
+    background-color: #fffdf9;
+    color: #855e25;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Estilo do título */
+.article-cardapio h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e96106;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo das células da tabela */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+    background-color: #e96106;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* Estilo para a imagem do produto */
+.article-cardapio img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* *************************************************************** */
+/*Estilizar a página de formulário*/
+.article-contato {
+    background-color: #fffdf9;
+    color: #855e25;
+    padding: 20px;
+    margin: 20px auto; /* Ajusta a margem para centralizar automaticamente */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    flex-direction:row;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #bd5f07;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #bd5f07;
+}
+
+/* *************************************************************** */
