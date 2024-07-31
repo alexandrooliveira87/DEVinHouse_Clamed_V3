@@ -1,0 +1,199 @@
+/* Reseta margens, preenchimento e define box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fcf2f2;
+}
+
+/* Estilização para o header */
+.header {
+    height: 90px;
+    background-color: #f5c367;
+    text-align: center;
+    color: #855e25;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.header div {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilizar Nav */
+.nav {
+    text-align: center;
+    padding: 15px;
+}
+
+.nav ul {
+    list-style-type: none; /* Remove os pontos */
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline; /* Coloca os itens em linha */
+    margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+.nav ul li a {
+    font-size: 25px;
+    text-decoration: none; /* Remove a linha sublinhada dos links */
+    color: #855e25;
+}
+
+/* Estilizando o footer */
+.footer {
+    background-color: #f5c367;
+    color: #855e25;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilizando o article */
+.article-index,
+.article-sobre {
+    background-color: #fffdf9;
+    color: #855e25;
+    padding: 20px;
+    margin: 20px auto; /* Ajusta a margem para centralizar automaticamente */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+   /* align-items: flex-start;*/
+    width: 90%; /* Define a largura como uma porcentagem */
+}
+
+/* Ajuste as alturas para flexibilidade */
+.article-index {
+    min-height: 400px; /* Altura mínima */
+}
+
+.article-sobre {
+    min-height: 600px; /* Altura mínima */
+}
+
+ p {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+    h3 {
+    padding: 10px;
+    font-size: 30px;
+    color: #ce690b;
+    font-weight: bold;
+}
+    .article-sobre .h3-maps{
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        color: #ce690b;
+        font-weight: bold;
+    }
+
+
+/* Centralizar as imagens e o conteúdo */
+.section-time {
+    display: flex; /* Use flexbox para alinhar os itens */
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Centraliza os itens */
+    gap: 150px;
+    }
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-nossosvalores, li{
+    
+    margin: 15px;
+    font-size: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .nav ul li {
+        display: block; /* Alinha os itens em coluna */
+        margin: 10px 0; /* Ajusta o espaçamento */
+    }
+
+    .article-index,
+    .article-sobre {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-time {
+        gap: 20px; /* Diminui o espaço entre os itens */
+        justify-content: center; /* Alinha os itens no centro */
+    }
+
+    .item img {
+        width: 100px;
+        height: 100px;
+    }
+    .map {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 500px; 
+        border: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .article-index,
+    .article-sobre {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+}
