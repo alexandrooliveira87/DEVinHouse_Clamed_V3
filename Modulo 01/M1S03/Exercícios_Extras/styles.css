@@ -86,3 +86,17 @@ h2{
     text-align: center;
     font-size: 50px;
 }
+
+/*Centralizando bg image*/
+
+.not-centered-bg, .centered-bg{
+    height: 500px;
+    width: 500px;
+    background-image: url(../Exercícios_Extras/img/8403697.jpg);
+
+}
+
+.centered-bg{
+    background-position: center;
+    background-size:cover ;
+}
