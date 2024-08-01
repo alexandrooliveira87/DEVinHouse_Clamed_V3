@@ -1,5 +1,5 @@
 
-[Projeto_M1S03] - Exercício no trelo, criar o site em html e Css.
+[Projeto_M1S03] - Exercício no trello, criar o site em html e Css.
 
 <img width="919" alt="image" src="https://github.com/user-attachments/assets/bf185da0-1b92-4939-92e8-74f959dedab3">
 <img width="919" alt="image" src="https://github.com/user-attachments/assets/a8b5a396-b091-4a42-baf7-5f6383d393bc">
