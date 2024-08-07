@@ -39,3 +39,10 @@ console.log("Hello World"[0]);
 console.log("Hello World".toUpperCase());
 console.log("Hello World".toLowerCase());
 
+// 5 - Simbolos especiais em string
+
+console.log("quebra\nlinha");
+console.log("Hello\t TAB");
+console.log("Hello\rWorld");
+console.log("Hello\bWorld");
+console.log("Hello\\World");
