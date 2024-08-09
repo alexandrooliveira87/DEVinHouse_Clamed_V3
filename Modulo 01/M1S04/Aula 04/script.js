@@ -1,3 +1,4 @@
+
 function cadastrarGato(event){
     event.preventDefault()
 
@@ -15,8 +16,9 @@ function cadastrarGato(event){
         cor: cor
     }
 
-    console.log(gato)
-    
+    localStorage.setItem("perfil", JSON.stringify(gato))
+
+    console.log(gato)   
 }
 
 document
@@ -28,8 +30,6 @@ function alterarImagem(event) {
     document.getElementById("catImagePreview").src = valorUrl
     document.getElementById("catImagePreview").style.borderRadius = "50%"
 }
-
-localStorage.setItem("perfil", JSON.stringify(gato))
 
 document
 .getElementById("catImage")
