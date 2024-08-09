@@ -1,3 +1,4 @@
+/*
 // 1 - Number 
 
 console.log(typeof 2);
@@ -46,3 +47,11 @@ console.log("Hello\t TAB");
 console.log("Hello\rWorld");
 console.log("Hello\bWorld");
 console.log("Hello\\World");
+
+// 6 - Concatenação
+
+console.log("Oi, " + " tudo" + " bem?");
+*/
+// 7 - template Strings
+
+console.log(`A soma de 2 + 2 é: ${2+2}` )

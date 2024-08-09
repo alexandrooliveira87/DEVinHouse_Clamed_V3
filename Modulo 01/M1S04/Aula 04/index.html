@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Gato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            margin-bottom: 5px;
+        }
+        
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        
+        #catImagePreview {
+            margin-top: 10px;
+            max-width: 200px;
+            max-height: 200px;
+            display: block;
+        }
+        #catColor {
+            width: 100px;
+            height: 30px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+    <form id="catForm">
+
+        <h1>Cadastro de Gato</h1>
+
+        <img id="catImagePreview" alt="Pré-visualização da Imagem">
+
+        <div class="input-group">
+            <label for="catName">Nome:</label>
+            <input type="text" id="catName" name="catName" required>
+        </div>
+        <div class="input-group">
+            <label for="catAge">Idade (em anos):</label>
+            <input type="number" id="catAge" name="catAge" required>
+        </div>
+        <div class="input-group">
+            <label for="catDescription">Descrição:</label>
+            <textarea id="catDescription" name="catDescription" rows="4" required></textarea>
+        </div>
+        <div class="input-group">
+            <label for="catImage">URL da Foto:</label>
+            <input type="url" id="catImage" name="catImage" placeholder="https://example.com/imagem.jpg" required>
+        
+        </div>
+        <div class="input-group">
+            <label for="catColor">Cor:</label>
+            <input type="color" id="catColor" name="catColor" value="#ffffff">
+        </div>
+        <button type="submit">Cadastrar</button>
+        <!-- colocar um footer fixo -->
+    </form>
+
+    <script src="script.js"> </script>
+</body>
+</html>
