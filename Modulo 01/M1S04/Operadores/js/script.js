@@ -1,4 +1,4 @@
-/*
+
 // 1 - Number 
 
 console.log(typeof 2);
@@ -99,7 +99,7 @@ console.log(undefined);
 console.log(0);
 console.log("");
 console.log(false);
-*/ 
+
 
 // 13 - Mudanças de tipos
 

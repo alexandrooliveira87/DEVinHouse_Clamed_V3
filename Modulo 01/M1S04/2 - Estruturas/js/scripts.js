@@ -1,12 +1,12 @@
-/*
+
 // 1 - variaveis
 
-let nome = "John Doe";
+let name = "John Doe";
 const idade = 30;
 let altura = 1.75;
 let peso = 80;
 
-console.log(nome);
+console.log(name);
 console.log(idade);
 console.log(altura);
 console.log(peso);
@@ -192,4 +192,3 @@ switch (job) {
         console.log("Cargo não encontrado");
 }
 
-*/
