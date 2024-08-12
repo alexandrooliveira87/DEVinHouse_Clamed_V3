@@ -91,7 +91,7 @@ if (nome === "Alex") {
     console.log("Olá visitante!");
 }
 
-*/ 
+
 
 // 8 - While
 
@@ -101,3 +101,77 @@ while (p < 10) {
     console.log(`repetindo ${p}`);
     p++;
 } 
+
+
+// 9 - do While
+
+let q = 0;
+
+do {
+    console.log(`repetindo ${q}`);
+    q++;
+} while (q < 10);
+
+
+
+// 10 - for
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`repetindo ${i}`);
+}
+
+
+// 11 - Break
+
+for (let i = 0; i <= 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log(`repetindo ${i}`);
+}
+
+
+
+// 12 - Continue
+
+for (let i = 0; i <= 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    console.log(`repetindo ${i}`);
+}
+
+*/
+
+// 13 - Switch
+
+const diaSemana = 4;
+
+switch (diaSemana) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda-feira");
+        break;
+    case 3:
+        console.log("Terça-feira");
+        break;
+    case 4:
+        console.log("Quarta-feira");
+        break;
+    case 5:
+        console.log("Quinta-feira");
+        break;
+    case 6:
+        console.log("Sexta-feira");
+        break;
+    case 7:
+        console.log("Sábado");
+        break;
+    default:
+        console.log("Dia inválido");
+}
+
+
+
