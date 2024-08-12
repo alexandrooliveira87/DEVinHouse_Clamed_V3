@@ -141,7 +141,7 @@ for (let i = 0; i <= 10; i++) {
     console.log(`repetindo ${i}`);
 }
 
-*/
+
 
 // 13 - Switch
 
@@ -173,5 +173,23 @@ switch (diaSemana) {
         console.log("Dia inválido");
 }
 
+const job = "Advogado" ;
 
+switch (job) {
+    case "Programador":
+        console.log("Desenvolvedor front-end");
+        break;
+    case "Desenvolvedor back-end":
+        console.log("Desenvolvedor back-end");
+        break;
+    case "Designer":
+        console.log("Desenvolvedor UX/UI");
+        break;
+    case "Advogado":
+        console.log("Advogado");
+        break;
+    default:
+        console.log("Cargo não encontrado");
+}
 
+*/
