@@ -22,6 +22,7 @@ console.log(5 >= 3);
 console.log(5 <= 3);
 console.log(5 == 3);
 
+
 // 3 - Especial number
 
 console.log(typeof Infinity); // Numero
