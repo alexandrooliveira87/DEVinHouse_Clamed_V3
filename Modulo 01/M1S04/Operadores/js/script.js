@@ -25,6 +25,7 @@ console.log(5 == 3);
 
 // 3 - Especial number
 
+
 console.log(typeof Infinity); // Numero
 console.log(typeof NaN);//Numero
 console.log(Infinity + 1); //Infinity
@@ -32,6 +33,7 @@ console.log(0 / 0); // NaN
 console.log(0 / "testo"); //NaN
 
 // 4 - String
+
 
 console.log("Hello");
 console.log('Hello');
