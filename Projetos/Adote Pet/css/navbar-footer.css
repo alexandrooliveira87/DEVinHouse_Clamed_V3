@@ -1,0 +1,76 @@
+/* CSS reset */
+*, *::before, *::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 10px;
+}
+
+/* Header styles */
+header {
+    background-color: #8c6c3d; /* Cor de fundo marrom claro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .logo .logo-img {
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 50px; /* Manter a altura igual à largura para criar o círculo */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    object-fit: cover; /* Mantém a imagem bem ajustada dentro do círculo */
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #8c6c3d; /* Cor de fundo marrom claro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}

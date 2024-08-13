@@ -1,0 +1,103 @@
+/* CSS reset */
+*, *::before, *::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Container que contém o formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content que contém o formulário */
+.content {
+    width: 500px;
+    background: #f0e8d5; /* Cor de fundo clara inspirada em tons naturais */
+    border: 1px solid #d0b59f; /* Cor de borda em tom mais escuro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho do formulário */
+ .cadastroForm {
+    font-size: 36px;
+    color: #8c6c3d; /* Cor de texto em tom de marrom */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cadastroForm::backdrop {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #8c6c3d; /* Cor de fundo do destaque em marrom */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Estilos dos campos do formulário */
+form p {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #8c6c3d; /* Cor de texto em tom de marrom */
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0b59f; /* Cor de borda em tom de marrom */
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 4px rgba(168, 168, 168, 0.6);
+    transition: all 0.2s linear;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="tel"]:focus,
+form select:focus {
+    border-color: #8c6c3d; /* Cor de borda em tom de marrom ao focar */
+    box-shadow: inset 0px 1px 4px rgba(6, 106, 117, 0.6);
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #8c6c3d; /* Cor de fundo em tom de marrom */
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s linear;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background: #a77a5f; /* Cor de fundo em tom mais escuro ao passar o mouse */
+}
+
+small {
+    color: #666;
+    font-size: 12px;
+}

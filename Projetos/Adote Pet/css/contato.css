@@ -1,0 +1,91 @@
+/* CSS reset */
+*, *::before, *::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Seção de contato */
+.contato-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f0e8d5; /* Cor de fundo clara inspirada em tons naturais */
+    border: 1px solid #d0b59f; /* Cor de borda em tom mais escuro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-section h2 {
+    font-size: 28px;
+    color: #8c6c3d; /* Cor de texto em tom de marrom */
+    margin-bottom: 20px;
+}
+
+.contato-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-section form p {
+    margin-bottom: 15px;
+}
+
+.contato-section form label {
+    color: #8c6c3d; /* Cor de texto em tom de marrom */
+    margin-bottom: 5px;
+}
+
+.contato-section form input[type="text"],
+.contato-section form input[type="email"],
+.contato-section form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0b59f; /* Cor de borda em tom de marrom */
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 4px rgba(168, 168, 168, 0.6);
+    transition: all 0.2s linear;
+    font-size: 16px;
+}
+
+.contato-section form input[type="text"]:focus,
+.contato-section form input[type="email"]:focus,
+.contato-section form textarea:focus {
+    border-color: #8c6c3d; /* Cor de borda em tom de marrom ao focar */
+    box-shadow: inset 0px 1px 4px rgba(6, 106, 117, 0.6);
+}
+
+.contato-section form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contato-section form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #8c6c3d; /* Cor de fundo em tom de marrom */
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s linear;
+    margin-top: 10px;
+}
+
+.contato-section form input[type="submit"]:hover {
+    background: #a77a5f; /* Cor de fundo em tom mais escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato-section {
+        padding: 10px;
+    }
+}
