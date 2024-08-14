@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#" onclick="showSection('administracao')">Administração</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadCadastroPessoas()">Cadastrar Pessoa</a></li>
+                    <li><a href="#" onclick="listPessoas()">Listar Pessoas</a></li>
+                    <li><a href="#" onclick="loadCadastroPets()">Cadastrar Pet</a></li>
+                    <li><a href="#" onclick="listPets()">Listar Pets</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="showSection('servicos')">Serviços</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="loadVendaServicos()">Venda de Serviços</a></li>
+                    <li><a href="#" onclick="loadCadastroServicos()">Cadastrar Serviço</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="logout()">Sair</a></li>
+        </ul>
+    </nav>
+    <main id="mainContent">
+        <!-- O conteúdo será carregado aqui -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Seu Projeto</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/pessoas.js"></script>
+    <script src="js/pets.js"></script>
+    <script src="js/servicos.js"></script>
+</body>
+</html>
