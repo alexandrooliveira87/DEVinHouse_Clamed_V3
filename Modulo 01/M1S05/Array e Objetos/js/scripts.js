@@ -69,7 +69,7 @@ const users = ["Alexander", "João", "Manoel", "Maria"];
 for (let i = 0; i < users.length; i++) {
     console.log(`Listando o usuáiro ${users[i]}`);
 }
- */
+
 
 // 8 - push e pop
 
@@ -94,11 +94,69 @@ console.log(array);
 
 
 
+// 13 - trim
+
+const nome = " Alex  ";
+
+console.log(nome.trim()); // Imprime: Alex
+
+ 
+
+// 14 - padstart
+
+const nome = "Alex";
+
+console.log(nome.padStart(10, "-")); // Imprime: --Alex--
+
+// 15 - padEnd
+
+const nomeEnd = "Alex";
+
+console.log(nomeEnd.padEnd(10, "-")); // Imprime: Alex-----
 
 
 
+// 16 - split 
+
+const nome = "Alexandre";
+
+console.log(nome.split("")); // Imprime: ["A", "l", "e", "x", "a", "n", "d", "r", "e"]
+
+console.log(nome.split("a")); // Imprime: ["Alex", "ndre"]
+
+// - join 
+
+const nomes = ["Alex", "João", "Manoel", "Maria"];
+
+console.log(nomes.join(", ")); // Imprime: Alex, João, Manoel, Maria
+
+console.log(nomes.join("")); // Imprime: AlexJoãoManoelMaria
 
 
+// 17 - repeat
+
+const nome = "Alex";
+
+console.log(nome.repeat(5)); // Imprime: AlexAlexAlexAlexAlexAlex
+
+console.log(nome.repeat(3, "-")); // Imprime: Alex-Alex-Alex
 
 
+*/
+// 18 - Rest parameter
 
+
+const somaInfinita = (...args) => {
+
+    let total = 0;
+
+    for (let i = 0; args.length; i++) { 
+        total += args[i];
+    }
+
+    return total;
+
+};
+
+
+console.log(somaInfinita(1, 2, 3, 4, 5)); // Imprime: 15
